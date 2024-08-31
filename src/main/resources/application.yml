@@ -5,7 +5,7 @@ spring:
     config:
       server:
         native:
-          searchLocations: file:///${user.dir}/config/
+          searchLocations: file:///system/projects/java/chavdar_vishranti/config/
         bootstrap: 'false'
   profiles:
     active: native
