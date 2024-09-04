@@ -76,7 +76,7 @@ jobs:
       run: |
         scp target/${{ env.JAR_NAME }} $SSH_USER@$SSH_HOST:$REMOTE_DIR/jars/$REPO_NAME
         scp $REPO_NAME.txt $SSH_USER@$SSH_HOST:$REMOTE_DIR/jars/$REPO_NAME
-        echo "JAR and $REPO_NAME.txt copied to VPS successfully."
+        echo "JAR - ${{ env.JAR_NAME }} and $REPO_NAME.txt copied to VPS successfully."
 
     - name: Stop existing service on VPS
       run: ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "$REMOTE_DIR/scripts/stop_service.sh ${{ env.JAR_NAME }}" || true
