@@ -1,12 +1,13 @@
 spring:
   application:
-    name: config-server
+    name: cv-config-server
   cloud:
     config:
       server:
         native:
           searchLocations: file:///system/projects/java/chavdar_vishranti/config/
         bootstrap: 'false'
+        
   profiles:
     active: native
 
@@ -21,10 +22,3 @@ eureka:
       defaultZone: http://103.168.18.176:8060/eureka/
   instance:
     prefer-ip-address: 'true'
-
-logging:
-  level:
-    # Set specific classes to a higher level to hide logs
-    org.springframework.boot.autoconfigure.condition.OnClassCondition: ERROR
-    org.springframework.boot.autoconfigure.jdbc.XADataSourceAutoConfiguration: ERROR
-    org.springframework.boot.autoconfigure.condition: ERROR
