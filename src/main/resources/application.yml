@@ -6,7 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/2124dc/props-configurations.git
-          default-label: master
+          default-label: main
           searchPaths: config/chavdar-vishranti/properties
           clone-on-start: true
 server:
@@ -20,3 +20,8 @@ eureka:
       defaultZone: http://103.168.18.176:8060/eureka/
   instance:
     prefer-ip-address: 'true'
+
+logging:
+  level:
+    org.springframework.cloud.config.server: DEBUG
+    org.eclipse.jgit: DEBUG
