@@ -10,9 +10,6 @@ spring:
           password: 2124@Github
           searchPaths: config/chavdar-vishranti/properties
           clone-on-start: true
-  profiles:
-    active: native
-
 server:
   port: '8061'
   ssl:
