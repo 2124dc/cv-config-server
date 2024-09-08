@@ -6,8 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/2124dc/props-configurations.git
-          username: 2124dc
-          password: 2124@Github
+          default-label: master
           searchPaths: config/chavdar-vishranti/properties
           clone-on-start: true
 server:
