@@ -13,7 +13,7 @@ server:
   ssl:
     enabled: 'false'
 
-logging:
-  level:
-    org.springframework.cloud.config.server: DEBUG
-    org.eclipse.jgit: DEBUG
+# logging:
+#   level:
+#     org.springframework.cloud.config.server: DEBUG
+#     org.eclipse.jgit: DEBUG
